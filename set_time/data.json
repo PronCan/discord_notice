@@ -1,17 +1,88 @@
 {
-  "update_date": "2022-12-14",
-  "data": [
+  "link": "https://game8.co/games/Pokemon-Scarlet-Violet/archives/384443#hl_1",
+  "trans_link": "https://bulbapedia.bulbagarden.net/wiki/Nugget#In_other_languages",
+  "update_date": "",
+  "coupon": [
     {
-        "title": "제목",
-        "start_date": "2022-12-12 18:30:00",
-        "end_date": "2022-12-21 18:30:00",
-        "content": "세부내용"
+        "title": "December 15th 20000 LP Gift",
+        "start_date": "2022-12-15",
+        "end_date": "2023-02-01 00:00:00 (KST)",
+        "code": "READY4RA1D",
+        "content": "20000 LP"
     },
     {
-        "title": "제목2",
-        "start_date": "2022-12-12 18:30:00",
-        "end_date": "2022-12-31 18:30:00",
-        "content": "세부내용"
+        "title": "December 15th Sandwich Ingredients Gift",
+        "start_date": "2022-12-15",
+        "end_date": "2022-12-19 23:59:59 (KST)",
+        "code": "SALTV1NEGAR",
+        "content": "샌드위치 재료 선물(랜덤)"
+    },
+    {
+        "title": "December 14th Sandwich Ingredients Gift",
+        "start_date": "2022-12-14",
+        "end_date": "2022-12-19 23:59:59 (KST)",
+        "code": "PEANUTBUTTER",
+        "content": "샌드위치 재료 선물(랜덤)"
+    },
+    {
+        "title": "December 13th Sandwich Ingredients Gift",
+        "start_date": "2022-12-13",
+        "end_date": "2022-12-19 23:59:59 (KST)",
+        "code": "LETTUCEBAC0N",
+        "content": "샌드위치 재료 선물(랜덤)"
+    },
+    {
+        "title": "December 12th Sandwich Ingredients Gift",
+        "start_date": "2022-12-12",
+        "end_date": "2022-12-19 23:59:59 (KST)",
+        "code": "T0MAT0SL1CE",
+        "content": "샌드위치 재료 선물(랜덤)"
+    },
+    {
+        "title": "December 1st Sandwich Ingredients Gift",
+        "start_date": "2022-12-01",
+        "end_date": "TBD",
+        "code": "HAJ1ME0R1G1NAL",
+        "content": "샌드위치 재료 선물\n(땅콩버터, Prosciutto, 함바그, 크림치즈, Noodles, Rice 각 10개씩"
+    },
+    {
+        "title": "title",
+        "start_date": "2022-12-13",
+        "end_date": "2022-12-18 14:59:00 (UTC)",
+        "code": "SALTV1NEGAR",
+        "content": "content"
+    }  
+  ],
+  "event": [
+    {
+      "title": "⭐️7 리자몽레이드",
+      "start_date": "2022-12-16 09:00:00 (KST)",
+      "end_date": "2022-12-19 08:59:00 (KST)",
+      "code": "",
+      "content": "⭐7:리자몽(드래곤 테라스탈)\n⭐4, 5: 플라제스, 따라큐"
+    }
+  ],
+  "pokemon": [
+    {
+      "title": "비행 테라크리스탈 피카츄 배포",
+      "start_date": "2022-11-18",
+      "end_date": "2023-02-28 23:59:59 (KST)",
+      "code": "",
+      "content": "조기구입특전, 이상한 소포로 획득"
+    },
+    {
+        "title": "스/바 DLC 예약구매 특전",
+        "start_date": "2022-11-18",
+        "end_date": "2023-02-28",
+        "code": "",
+        "content": "이상한 소포로 획득, 2023-02-28까지 구매시 23년 3월 7일까지 사용가능\n각 게임당 하나의 코드 사용 가능\n회복약x10/풀회복약x5/기력의조각x3/PP에이드x3/이상한사탕x1/금구슬x1"
+    },
+    {
+        "title": "더블팩 특전",
+        "start_date": "2022-12-13",
+        "end_date": "x",
+        "code": "",
+        "content": "몬스터볼 100개"
     }
   ]
 }

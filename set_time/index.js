@@ -1,23 +1,19 @@
 const axios = require("axios");
 // import axios from 'axios';
-const s_json = require("./key.json");
-const s_data_string = require("./data.json");
+const s_key = require("./key.json");
+const s_data = require("./data.json");
 
-const setUTCtoKor = 9*60*60*1000;
-const babo = s_json.babo;
-//const bosam_def = json.bosam_def;
-// const bosam_poke = s_json.bosam_poke;
+const babo = s_key.key; // 일반채팅
+const riolu = s_key.riolu; // 딴겜
 
 exports.handler = async(event) => {
     try {
         let date = new Date().toLocaleString();
-        //example endDate
-        //let dateData = new Date(data.data[0]);
-        let resText = s_json;
+        let content = setContent();
         // discord url, content
-        // const result = await axios.post(bosam_poke, {
-        const result = await axios.post(babo, {
-            "content": date
+        const result = await axios.post(riolu, {
+            // "content": content
+            "content": content
         });
         console.log("success", result);
     }catch(e) {
@@ -31,3 +27,14 @@ exports.handler = async(event) => {
     };
     return response;
 };
+
+function setContent() {
+    let coupon = s_data.coupon;
+    let res = '';
+    let len = coupon.length;
+    for(let idx = 0; idx<len-1; idx++) {
+        res += "* " + coupon[idx].code;
+        res += " => " + coupon[idx].content +'\n';
+    }
+    return res;
+}
