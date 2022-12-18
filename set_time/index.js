@@ -34,7 +34,8 @@ function setContent() {
     let len = coupon.length;
     for(let idx = 0; idx<len-1; idx++) {
         res += "* " + coupon[idx].code;
-        res += " => " + coupon[idx].content +'\n';
+        res += " => " + coupon[idx].content +'\n'
+        res += " 종료일자: " + coupon[idx].end_date;
     }
     return res;
 }
