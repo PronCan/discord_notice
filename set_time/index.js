@@ -52,7 +52,7 @@ function setEventContent() {
         res += "* " + event[idx].title;
         res += " => " + event[idx].content +'\n'
         res += " 기간: " + event[idx].start_date + "\n  ~ ";
-        res += event[idx].end_date;
+        res += event[idx].end_date + "\n";
         res += "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n";
     }
     return res;
