@@ -11,10 +11,12 @@ exports.handler = async(event) => {
         let date = new Date().toLocaleString();
         // let content = setCouponContent();
         let content = setEventContent();
+        let one_content = setOneEventContent(0);
         // discord url, content
         const result = await axios.post(riolu, {
             // "content": content
-            "content": content
+            // "content": content
+            "content": one_content
         });
         console.log("success", result);
     }catch(e) {
@@ -24,11 +26,11 @@ exports.handler = async(event) => {
     // TODO implement
     const response = {
         statusCode: 200,
-        body: JSON.stringify('Hello from Lambda!'),
+        body: JSON.stringify('success send message'),
     };
     return response;
 };
-
+    
 function setCouponContent() {
     let coupon = s_data.coupon;
     let res = '';
@@ -55,5 +57,17 @@ function setEventContent() {
         res += event[idx].end_date + "\n";
         res += "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n";
     }
+    return res;
+}
+
+function setOneEventContent(idx) {
+    let event = s_data.event;
+    let res = '';
+    res += "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n";
+    res += "* " + event[idx].title;
+    res += " => " + event[idx].content +'\n'
+    res += " 기간: " + event[idx].start_date + "\n  ~ ";
+    res += event[idx].end_date + "\n";
+    res += "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n";
     return res;
 }
