@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
       // 크롤링할 태그 찾기
       console.log(parentTag);
       let resultArr = [];
-      parentTag.each(function (i, elem) {
+      parentTag.each(function (i, elem) { 
         let itemObj = 
             $(this).find("tbody tr:nth-child(3)").text()
         resultArr.push(itemObj);
